@@ -40,16 +40,27 @@ data
 ### FINAL DATA (dictionary)
 
 | Column        | Meaning       |
-| ------------- |-------------:|
+| :------------- |-------------:|
 | CCAA          | Spanish Autonomous community |
 | fecha         | Date          |
 | casos         | Cases         |
+| nuevos        | Number of new cases compared to the previous day       |
 | IA            | Cumulative incidence         |
-| UCI           | Number of patients requiring Intensive care unit assistance        |
-| muertes       | Number of deaths        |
 | Hospitalizados      | Number of hospitalized patients      |
-| curados      | Number of healed patients      |
-| nuevos      | Number of new cases compared to the previous day       |
+| HospitalizadosNuevos      | Number of hospitalized patients      |
+| UCI           | Number of patients requiring Intensive care unit assistance        |
+| UCINuevos           | Number of new patients requiring Intensive care unit assistance        |
+| muertes       | Number of deaths        |
+| muertesNuevos       | Number of new deaths        |
+| curados       | Number of healed patients      |
+| curadosNuevos       | Number of new healed patients      |
+| PCR       | Polymerase chain reaction      |
+| testrap       | Total quick tests performed      |
+| postestrap       | Total positive quick tests      |
+| posTOTAL       | Total positive tests      |
+	
+## Scripts
+The `src` folder contains the scripts to get the data `download_pdf.py` & `get_pdf_today.py`, to transform pdf to csv `pdf_to_csv.py` and to get `dataCOVID19_es.csv` file > `join_data.py`.
 
 ## Notebooks
 The `notebooks` folder contains some examples of epidemologic models such as `SIRModel.ipynb`, `SEIRModel.ipynb` or `LogisticCurve.ipynb`.
